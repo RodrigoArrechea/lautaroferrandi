@@ -214,6 +214,7 @@ footer{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 12pt;
 	margin-top: 50px;
+	bottom: 0;
 }
 
 iframe{
