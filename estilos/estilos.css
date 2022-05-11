@@ -1,0 +1,319 @@
+*{
+	margin:0;
+	padding:0;
+	}
+
+#logo{
+	padding-top: 11px;
+	margin-left: 5px;
+	line-height: 20px;
+	width: 100%;
+	max-width: 232px;
+	}
+
+header{
+	width: 100%;
+	height: 55px;
+	background:#000000;
+	position: fixed;
+	top: 0;
+	z-index:998;
+}
+
+.contenedorheader{
+	max-width: 1000px;
+	height: 55px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Oswald', sans-serif;
+	z-index:999;
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display:none;
+	width:30px;
+	height:40px;
+	padding:8px;
+	border-left:1px solid #FFFFFF;
+	float: right;
+}
+
+header label:hover{
+	cursor: pointer;
+	background:#3B3B3B;
+}
+
+.menu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	float:right;
+	justify-content: flex-end;
+}
+
+.menu li:hover{
+	background:#3B3B3B;
+	}
+
+.menu ul a{
+	display:block;
+	padding:16px 8px;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+
+
+@media (max-width:768px){
+	header label{
+		display: block;
+	}
+	
+	.menu{
+		position: absolute;
+		width: auto;
+		background:#000000;
+		margin-left: -70%;
+		transition: all 0.5s;
+		top: 55px;
+		z-index:998;
+	}
+	
+	.menu ul{
+		flex-direction: column;
+	}
+	
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+	
+}
+
+#circulo{
+	width: 300px; 
+	height: 300px; 
+	border-radius: 150px; 
+	border-radius: 150px; 
+	border-radius: 150px; 
+	background:rgba(0,0,0,0.6);
+	text-align: center;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+		z-index:1;
+}
+
+#nombre{
+	font-family: 'Oswald', sans-serif;
+	color:#FFFFFF;
+	font-size: 27pt;
+	}
+
+#rubro{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #FFFFFF;
+	font-size: 17pt;
+}
+
+#tabla{
+	max-width: 170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#titulo{
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+	font-size: 25pt;
+	text-align: center;
+	width: auto;
+	margin-top: 95px;
+	margin-bottom: 30px;
+}
+
+.contenedorcolumnas{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	}
+	
+.contenedorcolumnas img{
+	width:100%;
+	max-width: 333px;
+	height:auto;
+	}
+
+.contenedorcolumnas img:hover{
+	opacity: 0.4;
+	transition: 0.7s;
+}
+	
+#columnas article{
+	margin: 25px;
+	line-height: 11px;
+	max-width: 333px;
+}
+
+.contenedorfotos{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	}
+	
+.contenedorfotos img{
+	width:100%;
+	max-width: 333px;
+	height:auto;
+	}
+
+.contenedorfotos img:hover{
+	opacity: 0.4;
+	transition: 0.7s;
+}
+	
+#fotos article{
+	line-height: 11px;
+	max-width: 333px;
+}
+
+.contenedorbiografia{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	}
+	
+.contenedorbiografia img{
+	width:100%;
+	max-width: 333px;
+	height:auto;
+	}
+
+.contenedorbiografia img:hover{
+	opacity: 0.4;
+	transition: 0.7s;
+}
+	
+#biografia article{
+	margin: 18px;
+	line-height: 11px;
+	max-width: 500px;
+}
+
+footer{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color:#FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 12pt;
+	margin-top: 50px;
+}
+
+iframe{
+	width: 100%;
+}
+
+
+#forma{
+	width:100%;
+	max-width:333px;
+	height:auto;
+	margin:auto;
+	background:#3B3B3B;
+	padding:10px 20px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	}
+
+#nombres, #apellidos, #email, #telefono, #mensaje, #boton{
+	width:100%;
+	margin-bottom:20px;
+	padding:7px;
+	box-sizing:border-box;
+	font-size:17px;
+	border:none;
+	}
+
+#mensaje{
+	min-height:100px;
+	max-height:200px;
+	max-width:100%;
+	}
+
+#boton{
+	background:#000000;
+	color:#FFFFFF;
+	padding:20px;
+	}
+	
+#boton:hover{
+	cursor:pointer;
+	opacity: 0.4;
+	}
+
+.textocontacto{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+	font-size: 25px;
+	text-align: center;
+}
+
+.servicios{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align:left;
+	line-height: 23px;
+}
+
+.textobiografia{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+	font-size: 18px;
+	max-width: 500px;
+	line-height: 20px;
+}
+
+.active{
+	background-color: #3B3B3B;
+	}
+
+.social{
+	max-width: 60px; 
+	max-height: 204px;
+	width: 100%;
+	height: 100%;
+	background-color: #3B3B3B;
+	position:fixed;
+	top:175px;
+	left:0;
+	z-index:800;
+	border-radius: 10px;
+}
+
+@media (max-width:955px){
+	.social{
+		position:absolute;
+		left:0;
+		top:55px;
+		max-width: 30px; 
+		max-height: 100px;
+	}
+	
+	#redes img{
+		width: 20px;
+		height: auto;
+	}
+	
+	#redes{
+		width: 30px;
+		height: 100px;
+	}
+}
